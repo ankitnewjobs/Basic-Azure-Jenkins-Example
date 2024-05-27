@@ -2,6 +2,8 @@
 
 # Jenkins-Zero-To-Hero
 Open the Git Bash 
+
+
 ![image](https://github.com/ankitnewjobs/Basic-Azure-Jenkins-Example/assets/154872782/6e6a7d18-3062-4088-aef6-9f2d0211acfd)
 
 Creating the SSH Connection
