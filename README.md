@@ -7,7 +7,9 @@ Open the Git Bash
 ![image](https://github.com/ankitnewjobs/Basic-Azure-Jenkins-Example/assets/154872782/6e6a7d18-3062-4088-aef6-9f2d0211acfd)
 
 Creating the SSH Connection
+
 $ ssh -i /c/Users/ankit/Desktop/test-vm_key.pem ankit@13.88.97.69
+
 ![image](https://github.com/ankitnewjobs/Basic-Azure-Jenkins-Example/assets/154872782/684b96a8-15bc-4a26-859d-702ef0ac2884)
 
 
@@ -32,6 +34,7 @@ Verify Java is Installed
 ```
 java -version
 ```
+
 ![image](https://github.com/ankitnewjobs/Basic-Azure-Jenkins-Example/assets/154872782/7639b065-f251-4de3-bbb0-86f0f72c8113)
 
 Now, you can proceed with installing Jenkins
@@ -45,6 +48,7 @@ echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
 sudo apt-get update
 sudo apt-get install jenkins
 ```
+
 ![image](https://github.com/ankitnewjobs/Basic-Azure-Jenkins-Example/assets/154872782/37001163-6b1d-4f4d-acdc-033a58ba72ec)
 
 **Note: ** By default, Jenkins will not be accessible to the external world due to the inbound traffic restriction by AWS. Open port 8080 in the inbound traffic rules as show below.
