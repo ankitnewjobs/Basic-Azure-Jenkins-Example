@@ -26,7 +26,7 @@ Install Java
 
 ```
 sudo apt update
-sudo apt install openjdk-11-jre
+sudo apt install OpenJDK-11-jre
 ```
 
 Verify Java is Installed
@@ -51,7 +51,7 @@ sudo apt-get install jenkins
 
 ![image](https://github.com/ankitnewjobs/Basic-Azure-Jenkins-Example/assets/154872782/37001163-6b1d-4f4d-acdc-033a58ba72ec)
 
-**Note: ** By default, Jenkins will not be accessible to the external world due to the inbound traffic restriction by AWS. Open port 8080 in the inbound traffic rules as show below.
+**Note: ** By default, Jenkins will not be accessible to the external world due to AWS's inbound traffic restriction. Open port 8080 in the inbound traffic rules as shown below.
 
 - VM > Network Setting > Click on <Create Inbound Port Rules>
 - Add Port Number 8080
@@ -67,9 +67,9 @@ http://<Public IP Adress>:8080    [You can get the -public-ip-address from your 
 
 Note: If you are not interested in allowing `All Traffic` to your EC2 instance
       1. Delete the inbound traffic rule for your instance
-      2. Edit the inbound traffic rule to only allow custom TCP port `8080`
+      2. Edit the inbound traffic rule only to allow custom TCP port `8080`
   
-After you login to Jenkins, 
+After you log in to Jenkins, 
       - Run the command to copy the Jenkins Admin Password - `sudo cat /var/lib/jenkins/secrets/initialAdminPassword`
       - Enter the Administrator password
       
@@ -83,7 +83,7 @@ Wait for the Jenkins to Install suggested plugins
 
 <img width="1291" alt="Screenshot 2023-02-01 at 10 59 31 AM" src="https://user-images.githubusercontent.com/43399466/215959398-344b5721-28ec-47a5-8908-b698e435608d.png">
 
-Create First Admin User or Skip the step [If you want to use this Jenkins instance for future use-cases as well, better to create admin user]
+Create First Admin User or Skip the step [If you want to use this Jenkins instance for future use-cases as well, it is better to create an admin user]
 
 <img width="990" alt="Screenshot 2023-02-01 at 11 02 09 AM" src="https://user-images.githubusercontent.com/43399466/215959757-403246c8-e739-4103-9265-6bdab418013e.png">
 
